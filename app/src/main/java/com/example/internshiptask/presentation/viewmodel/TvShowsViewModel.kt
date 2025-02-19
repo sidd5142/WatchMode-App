@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
-class ReleasesViewModel : ViewModel() {
+class TvShowsViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(ReleasesUiState(isLoading = true)) // Set initial state as loading
     val uiState = _uiState.asStateFlow()
 
@@ -17,7 +17,7 @@ class ReleasesViewModel : ViewModel() {
         viewModelScope.launch {
             val repository = Repository()
             try {
-                val result = repository.getReleases().filter { it.type.startsWith("movie") }
+                val result = repository.getReleases().filter { it.type.startsWith("tv") }
                 _uiState.update {
                     it.copy(releases = result, isLoading = false) // Update state when data is loaded
                 }

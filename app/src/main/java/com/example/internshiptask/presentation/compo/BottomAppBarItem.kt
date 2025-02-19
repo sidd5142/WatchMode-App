@@ -2,7 +2,6 @@ package com.example.internshiptask.presentation.compo
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -22,11 +21,6 @@ sealed class BottomAppBarItem(
         label = "Movies",
         icon = Icons.Filled.Home
     )
-
-//    object Search : BottomAppBarItem(
-//        label = "Search",
-//        icon = Icons.Filled.Search
-//    )
 
     object Favorites : BottomAppBarItem(
         label = "TV Shows",

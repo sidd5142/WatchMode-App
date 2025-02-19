@@ -33,8 +33,6 @@ import com.example.internshiptask.presentation.screens.ReleasesScreen
 import com.example.internshiptask.presentation.state.ReleasesUiState
 import com.example.internshiptask.ui.theme.InternshipTaskTheme
 
-//import com.example.internshiptask.domain.titlesSample
-
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

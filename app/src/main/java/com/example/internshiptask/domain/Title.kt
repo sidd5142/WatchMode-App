@@ -9,7 +9,10 @@ data class Title(
     val endYear: Int?,
     val genreNames: List<String>?,
     val userRating: Double?,
-    val criticScore: Int?)
+    val criticScore: Int?,
+    val type : String,) {
+
+}
 
 
 val titlesSample = listOf(
@@ -22,7 +25,9 @@ val titlesSample = listOf(
         endYear = null,
         genreNames = listOf("Drama", "Crime"),
         userRating = 9.3,
-        criticScore = 88
+        criticScore = 88,
+        type = "tv_special"
+
     ),
     Title(
         id = 2,
@@ -33,7 +38,8 @@ val titlesSample = listOf(
         endYear = null,
         genreNames = listOf("Drama", "Crime"),
         userRating = 9.3,
-        criticScore = 88
+        criticScore = 88,
+        type = "tv_special"
     ),
     Title(
         id = 3,
@@ -44,7 +50,8 @@ val titlesSample = listOf(
         endYear = null,
         genreNames = listOf("Drama", "Crime"),
         userRating = 9.3,
-        criticScore = 88
+        criticScore = 88,
+        type = "tv_special"
     ),
     Title(
         id = 4,
@@ -55,7 +62,9 @@ val titlesSample = listOf(
         endYear = null,
         genreNames = listOf("Drama", "Crime"),
         userRating = 9.3,
-        criticScore = 88
+        criticScore = 88,
+        type = "tv_special"
+
     ),
     Title(
         id = 5,
@@ -66,6 +75,8 @@ val titlesSample = listOf(
         endYear = null,
         genreNames = listOf("Drama", "Crime"),
         userRating = 9.3,
-        criticScore = 88
+        criticScore = 88,
+        type = "tv_special"
+
     )
 )

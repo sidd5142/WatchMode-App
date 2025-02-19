@@ -24,7 +24,11 @@ fun AppNavHost(navController: NavHostController) {
         )
 
 
-        favoritesScreen()
+        favoritesScreen(
+            onMovieClick = {title ->
+                navController.navigateToTitleDetails(title.id)
+            }
+        )
 
         titleDetailsScreen<Any>(){
             //navController.popBackStack()
@@ -44,12 +48,10 @@ fun NavController.navigateSingleTopWithPopUpTo(
             ::navigateToReleasesList
         )
 
-
         BottomAppBarItem.Favorites -> Pair(
             favoritesScreenRoute,
             ::navigateToFavoritesScreen
         )
-
     }
 
     val navOptions = navOptions {

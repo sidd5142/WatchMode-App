@@ -59,7 +59,9 @@ dependencies {
     implementation (libs.androidx.navigation.ui.ktx)
     implementation (libs.androidx.navigation.compose)
     implementation(libs.coil.compose)
+    implementation(libs.coil.kt.coil.compose)
     implementation(libs.androidx.espresso.core)
+    implementation (libs.accompanist.placeholder.material3)
 
 
     testImplementation(libs.junit)

@@ -20,7 +20,7 @@ import titleIdArgument
 class TitleDetailsViewModel(
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
-    private val _uiState = MutableStateFlow(TitleDetailsUiState())
+    private val _uiState = MutableStateFlow(TitleDetailsUiState(isLoading = true))
     val uiState = _uiState.asStateFlow()
     private val repository = Repository()
 
@@ -41,11 +41,12 @@ class TitleDetailsViewModel(
                 val result = repository.getTitleDetails(titleId)
 
                 _uiState.update {
-                    it.copy(title = result)
+                    it.copy(title = result, isLoading = false)
                 }
 
             } catch (e: Exception) {
                 e.printStackTrace()
+                _uiState.update { it.copy(isLoading = false) }
             }
         }
     }

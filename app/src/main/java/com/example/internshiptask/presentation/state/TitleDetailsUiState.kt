@@ -4,7 +4,7 @@ import com.example.internshiptask.domain.Title
 
 data class TitleDetailsUiState(
     val title: Title? = null,
-    val isLoading: Boolean = false,
+    val isLoading: Boolean = true,
     val error: String? = null
 
 )
