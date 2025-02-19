@@ -1,6 +1,8 @@
 [versions]
+accompanistPlaceholderMaterial3 = "0.33.2-alpha"
 agp = "8.7.3"
 coilCompose = "3.1.0"
+coilComposeVersion = "2.5.0"
 converterGson = "2.11.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
@@ -19,11 +21,13 @@ navigationUiKtx = "2.8.7"
 retrofit = "2.11.0"
 
 [libraries]
+accompanist-placeholder-material3 = { module = "com.google.accompanist:accompanist-placeholder-material3", version.ref = "accompanistPlaceholderMaterial3" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
 coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+coil-kt-coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
