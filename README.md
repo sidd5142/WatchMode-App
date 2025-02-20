@@ -41,7 +41,7 @@ This is an app for a TV Show Discovery App built using **Jetpack Compose**. The 
 ---
 
 ## 🎥 Demo Video
-[Click here to watch the video demo](https://your-video-link.com)
+[Click here to watch the video demo]((https://shorturl.at/GBVj4))
 
 
 ---
@@ -49,5 +49,5 @@ This is an app for a TV Show Discovery App built using **Jetpack Compose**. The 
 ## 🤝 Contributing
 Feel free to fork the repo, create a new branch, and submit a pull request!
 
-📩 **Contact:** siddharth@example.com
+📩 **Contact:** siddharthyadav5142@gmail.com
 
